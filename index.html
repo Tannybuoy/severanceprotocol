@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Severance Protocol</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <h1>Severance Protocol</h1>
+        <p class="subtitle">A playful office maze operation</p>
+      </header>
+
+      <section class="hud">
+        <div><strong>Active:</strong> <span id="active-character">Data Refiner</span></div>
+        <div><strong>Objective:</strong> <span id="objective-status">Retrieve the confidential file.</span></div>
+        <div><strong>Ability:</strong> <span id="ability-help">Press Space to reveal hidden numbers.</span></div>
+      </section>
+
+      <canvas id="game" width="960" height="640" aria-label="Severance Protocol game canvas"></canvas>
+
+      <aside class="panel">
+        <h2>Controls</h2>
+        <ul>
+          <li><kbd>1</kbd>-<kbd>4</kbd>: Switch character</li>
+          <li><kbd>Arrow Keys</kbd>: Move selected character</li>
+          <li><kbd>Space</kbd>: Use special ability</li>
+        </ul>
+        <h2>Outie Feed</h2>
+        <div id="outie-feed" class="feed"></div>
+      </aside>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
